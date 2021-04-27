@@ -9,6 +9,7 @@ Pendiente queda subirlo como módulo a npmjs.com
 Utilización:
 ------
 `import Pagination from "./Pagination";`
+
 Y después insertar en el return del render:
 ```
 <Pagination {con los siguientes props} /> 
