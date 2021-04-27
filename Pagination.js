@@ -60,7 +60,7 @@ export default class Pagination extends React.Component {
 		return(
 			<nav className="pagination">
 				<div id="page-numbers">
-					<span>Mostrando {this.props.indexOfFirstitem+1}-{Math.min(this.props.indexOfLastitem, this.props.lenResults)} de {this.props.lenResults} resultados.</span>
+					<span>Mostrando {this.props.indexOfFirstItem+1}-{Math.min(this.props.indexOfLastItem, this.props.lenResults)} de {this.props.lenResults} resultados.</span>
 				</div>
 				<div className="pagination-nav"> 
 					<span className="pagination-nav-info">Página 
