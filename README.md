@@ -39,3 +39,7 @@ Atributos
 | indexOfLastItem | int      |    **Requerido.**  Último elemento de la lista |
 | currentPage | int | **Requerido.** Página actual de la paginación |
 | setState | state | **Requerido.** Para actualizar los datos del módulo padre con las acciones de Pagination, p=>this.setState(p)|
+
+Estilos
+-----
+El estilo por defecto se encuentra en _pagination.css_, pero feel free to cambiar lo que quieras la verdad.
