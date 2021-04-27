@@ -1,0 +1,27 @@
+.pagination {
+	position: relative;
+	margin-top: 30px;
+}
+.pagination-select {
+	margin: 0 5px;
+}
+.pagination-nav {
+	position: absolute;
+	right: 0;
+}
+.pagination-nav-info {
+	margin-left: 15px;
+}
+.navigator {
+	cursor:pointer;
+	user-select: none;
+}
+.navigator:hover {
+	text-decoration:underline;
+	color:red;
+}
+.disabled:hover {
+	cursor: not-allowed;
+	text-decoration:none;
+	color:black;
+}
