@@ -4,7 +4,7 @@ Módulo de paginación basado en ReactJS
 Instalación: 
 ------
 Puedes copiar los archivos para una completa personalización del módulo, y cambiar el idioma, por ejemplo, que es lo que te recomiendo la verdad.
-Pendiente queda subirlo como módulo a npmjs.org
+Pendiente queda subirlo como módulo a npmjs.com
 
 Utilización:
 ------
@@ -12,12 +12,6 @@ Utilización:
 Y después insertar en el return del render:
 ```
 <Pagination {con los siguientes props} /> 
-<Pagination eventsPerPage={this.state.eventsPerPage} 
-								lenResults={data.length} 
-								indexOfLastEvent={indexOfLastEvent} 
-								indexOfFirstEvent={indexOfFirstEvent} 
-								currentPage={this.state.currentPage} 
-								setState={p=>this.setState(p)} /> 
 ```
 Y establecer el state del módulo padre con: 
 ```
