@@ -20,11 +20,18 @@ this.state = {
   itemsPerPage: this.props.maxEvents
 }
 ```
+Los datos se mostrarán de realizando la siguiente lógica:
+```
+    const indexOfLastItem = this.state.currentPage * this.state.itemsPerPage;
+    const indexOfFirstItem = indexOfLastEvent - this.state.itemsPerPage;
+
+    const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
+```
 | Nombre        | Tipo          | Descripción  |
 | ------------- |:-------------:| :-----|
 | itemsPerPage      | int | **Requerido.** Número de elementos que se muestran por página |
 | lenResults      | int      |   **Requerido.** Número de elementos en total |
-| indexOfFirstItem | int      |    **Requerido.** Primer elemento  |
-| indexOfLastItem | int      |    **Requerido.**  Último elemento |
-| currentPage | int | **Requerido.** Página en la que se quiere empezar. Generalmente la 1 pero no sé |
-| setState | state | **Requerido.** Realmente no sé para qué. Por ejemplo, p=>this.setState(p)|
+| indexOfFirstItem | int      |    **Requerido.** Primer elemento de la lista  |
+| indexOfLastItem | int      |    **Requerido.**  Último elemento de la lista |
+| currentPage | int | **Requerido.** Página actual de la paginación |
+| setState | state | **Requerido.** Para actualizar los datos del módulo padre con las acciones de Pagination, p=>this.setState(p)|
